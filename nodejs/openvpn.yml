@@ -1,0 +1,8 @@
+- hosts: openvpn
+  remote_user: openvpnas
+  gather_facts: false 
+
+  tasks: 
+    - name: change password
+      shell: "/usr/local/openvpn_as/scripts/sacli --user khaled --new_pass {{ pass }} SetLocalPassword"
+      become: yes

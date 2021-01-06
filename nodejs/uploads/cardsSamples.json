@@ -1,0 +1,25 @@
+[{
+    "displayName": "Sample 1",
+    "cardPayloadUrl": "http://it.ubilityai.systems/img/card.json"
+  },
+  {
+    "displayName": "Sample 2",
+    "cardPayloadUrl": "http://it.ubilityai.systems/img/food.json"
+  },
+  {
+    "displayName": "Sample 3",
+    "cardPayloadUrl": "http://it.ubilityai.systems/img/image-gallery.json"
+  },
+  {
+    "displayName": "Sample 4",
+    "cardPayloadUrl": "http://it.ubilityai.systems/img/restaurant.json"
+  },
+  {
+    "displayName": "Sample 5",
+    "cardPayloadUrl": "http://it.ubilityai.systems/img/sporting-event.json"
+  },
+  {
+    "displayName": "Sample 6",
+    "cardPayloadUrl": "http://it.ubilityai.systems/img/stocks.json"
+  }
+]
