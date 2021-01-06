@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "3aba702a-fe7a-463a-b098-d75f22a4df8a",
+		"name": "botcomponent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_botcomponent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJuYW1lIjoiYm90Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA5ODUxNDUxLCJleHAiOjE2NDEzODc0NTF9.Lz15RIhu3Xuc_p1fSGVh_RweEePpU83oOdI_kPzE8qY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"cpu\",\n    \"side_menu\": [\n        {\n            \"type\": \"TextField\",\n            \"name\": \"firstName\",\n            \"label\": \"Firsttt Name\",\n            \"required\": false,\n            \"multiline\": true,\n            \"rowsMax\": \"2\",\n            \"helperText\": \"Incorrecttttt entry\"\n        },\n        {\n            \"type\": \"TextField\",\n            \"name\": \"lastName\",\n            \"label\": \"lasttt Name\",\n            \"required\": true,\n            \"multiline\": true,\n            \"rowsMax\": \"5\",\n            \"helperText\": \"IIIncorrecttttt entry.\"\n        },\n        {\n            \"type\": \"Switch\",\n            \"name\": \"checkedSwitch\",\n            \"label\": \"ONNN????\",\n            \"labelPlacement\": \"end\",\n            \"color\": \"primary\"\n        },\n        {\n            \"type\": \"Select\",\n            \"name\": \"currency\",\n            \"label\": \"Select currency\",\n            \"native\": true,\n            \"helperText\": \"Pleaseeee select your currency\",\n            \"options\": [\n                \"$\",\n                \"€\",\n                \"฿\",\n                \"¥\",\n                \"L.L.\"\n            ]\n        },\n        {\n            \"type\": \"CheckboxGroup\",\n            \"groupLabel\": \"CheckBoxes\",\n            \"groupHelperText\": \"Be careful\",\n            \"groupItems\": [\n                {\n                    \"name\": \"isVegan\",\n                    \"label\": \"Vegan?\",\n                    \"labelPlacement\": \"end\",\n                    \"color\": \"primary\"\n                },\n                {\n                    \"name\": \"isKosher\",\n                    \"label\": \"Kosher?\",\n                    \"labelPlacement\": \"end\",\n                    \"color\": \"secondary\"\n                },\n                {\n                    \"name\": \"isLactoseFree\",\n                    \"label\": \"Lactose Free?\",\n                    \"labelPlacement\": \"start\",\n                    \"color\": \"primary\"\n                }\n            ]\n        }\n    ],\n    \"type\": \"comp\",\n    \"color\": \"red\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://54.224.166.196:3001/botcomponent/add_botcomponenent",
+					"protocol": "http",
+					"host": [
+						"54",
+						"224",
+						"166",
+						"196"
+					],
+					"port": "3001",
+					"path": [
+						"botcomponent",
+						"add_botcomponenent"
+					]
+				},
+				"description": "Add componenent : body json {name,side menu ,icon ,color} "
+			},
+			"response": []
+		},
+		{
+			"name": "get_botcomponents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJuYW1lIjoiYm90Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA5ODUxNDUxLCJleHAiOjE2NDEzODc0NTF9.Lz15RIhu3Xuc_p1fSGVh_RweEePpU83oOdI_kPzE8qY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://54.224.166.196:3001/botcomponent/get_botcomponents_names",
+					"protocol": "http",
+					"host": [
+						"54",
+						"224",
+						"166",
+						"196"
+					],
+					"port": "3001",
+					"path": [
+						"botcomponent",
+						"get_botcomponents_names"
+					]
+				},
+				"description": "get components details : \n{name, side menu,icon,color}\n"
+			},
+			"response": []
+		},
+		{
+			"name": "get_cards",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJuYW1lIjoiYm90Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA5ODUxNDUxLCJleHAiOjE2NDEzODc0NTF9.Lz15RIhu3Xuc_p1fSGVh_RweEePpU83oOdI_kPzE8qY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://54.224.166.196:3001/card/get_cards",
+					"protocol": "http",
+					"host": [
+						"54",
+						"224",
+						"166",
+						"196"
+					],
+					"port": "3001",
+					"path": [
+						"card",
+						"get_cards"
+					]
+				},
+				"description": "get all cards from db:\ncardname\ncardDetails"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "http://localhost:5000"
+		}
+	]
+}
